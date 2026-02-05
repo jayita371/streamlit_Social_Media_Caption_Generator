@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 # Direct API key
 
 load_dotenv()
-api_key = os.getenv("API_KEY")
-genai.configure(api_key=api_key)
+api_key_new = os.getenv("API_KEY")
+genai.configure(api_key=api_key_new)
 
 # Load Gemini Model
 model = genai.GenerativeModel("gemini-2.5-flash")
