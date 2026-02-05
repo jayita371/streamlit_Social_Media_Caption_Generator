@@ -5,7 +5,7 @@ import google.generativeai as genai
 # Direct API key
 
 #load_dotenv()
-api_key_new = st.secrets["API_KEY"]
+api_key_new = st.secrets.get("GOOGLE_API_KEY")
 genai.configure(api_key=api_key_new)
 
 # Load Gemini Model
